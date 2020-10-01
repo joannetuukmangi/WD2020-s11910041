@@ -1,0 +1,42 @@
+/*p {
+    color: blue;
+}
+p.error {
+    color: red;
+}
+p.success.feedback {
+    color: green;
+    border: 5px solid yellow; 
+}*/
+#top-container {
+    background-color:lightblue;
+}
+#bottom-container {
+    background-color: lightcoral;
+}
+div.error {
+    color: teal;
+}
+a[href]{
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: yellow;
+}
+a[href="www.google.com"]{
+    background-color: yellowgreen;
+}
+a[href$=".ac.id"]{
+    background-color: lightskyblue;
+}
+h1:hover {
+    color: white;
+    background-color: black;
+}
+p::selection {
+    background-color: red;
+    color: white;
+}
+a::before {
+    content: "link -";
+}
