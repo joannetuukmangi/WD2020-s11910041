@@ -1,0 +1,31 @@
+.emoji1{
+    background-color: lightskyblue;
+    width: 100px;
+    display: block;
+    padding: 20px;
+    border: 10px solid red;
+}
+.emoji2{
+    background-color: lightskyblue;
+    width: 100px;
+    display: block;
+    padding: 20px;
+    border: 10px solid red;
+    margin-left: 160px;
+}
+.emoji3{
+    background-color: lightskyblue;
+    width: 100px;
+    display: block;
+    padding: 20px;
+    border: 10px solid red;
+    margin-left: 320px;
+}
+p{
+    background-color: lightgrey;
+    width: 300px;
+    height: 100px;
+    border: 15px solid black;
+    padding: 50px;
+    margin: 20px;
+}
