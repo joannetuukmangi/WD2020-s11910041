@@ -1,62 +1,93 @@
-//variabel
+//Variable
 
-//let & cons
-
+//let & const
 // let _umur = 25;
 // _umur = 26;
-// // let nilai = 95.5;
-// // let sudahMenikah = false;
-// // let $nama = "John Doe";
-// // console.log(_umur);
-// // console.log($nama);
+// let nilai = 95.5;
+// let sudahMenikah = true;
+// let $nama="John Doe";
+// console.log(_umur);
+// console.log($nama);
+// console.log(nilai);
+// console.log(sudahMenikah);
 
-//     let alamat;
-//     console.log(alamat);
+// let alamat;
+// console.log(alamat);
 
-// // const tahunLahir = 2010;
-// // console.log(tahunLahir);
+// const tahunLahir = 2010;
+// console.log(tahunLahir);
 
+//Operator
+
+//Arithmetic Operator {+,-,*,/}
+
+// let umur=30;
 // let angka1 = 10;
 // let angka2 = 20;
-// console.log(angka1+angka2);
+// console.log(angka1 + angka2);
 
-// let umur = 30;
 // let namaDepan = "John";
 // let namaBelakang = "Doe";
-// console.log("Nama Saya" + namaDepan + " " namaBelakang " " + umur " ");
+// console.log("Nama Saya " + namaDepan + " " + namaBelakang + ". Umur saya adalah " + umur + " tahun");
 
-//ternary operator
+//Operator Perbandingan
+
 // let angka1 = 10;
 // let angka2 = 9;
 
 // console.log(angka1 <= angka2);
 
-//operator logika
-//let kondisi1 = 1<2;
-//let kondisi2 = true;
+//ternary operator
+// let angka = 5;
+// let hasil = angka <= 0 ? "Negatif" : "Positif";
+// console.log(hasil);
 
-//console.log(kondisi1 || kondisi2);
-//console.log(!kondisi1);
+//Operator Logika
+// let kondisi1 = 1 < 2;
+// let kondisi2 = true;
 
-//let berat = prompt("Masukan Berat: ");
-//console.log("Berat yg dimasukan adalah " + berat);
-//let tinggi = prompt("Masukan Tinggi: ");
-//console.log("Tinggi yg dimasukan adalah " + tinggi);
+// console.log(kondisi1 || kondisi2);
+// console.log(!kondisi1);
 
-//let bilangan1 = berat;
-//let bilangan2 = tinggi;
+// let angka = prompt("Masukkan Angka : ");
+// console.log("angka yang dimasukkan adalah " + angka);
 
-//console.log(bilangan1 / bilangan2 * bilangan2);
-
-let berat = prompt("Masukan berat badan anda = kg");
-let tinggi = prompt("Masukan tinggi badan anda = cm");
-let bni = berat / (tinggi * tinggi);
-
-console.log("your BNI = " + bni);
-
-
-//exercise #7
+//Exercise 7
 /*
-Buatlah program Javascript untuk menghitung BMI(Body Mass Index).
+Buatlah program JavaScript untuk menghitung BMI (Body Mass Index).
 Rumus = berat (kg) / (tinggi * tinggi)
-gunakan promt untuk meminta input user.*/
+Gunakan prompt untuk meminta input dari user
+*/
+
+//Assignment Menghitung BMI dan Kategori
+
+let berat = prompt("Masukkan Berat Badan Anda (kg) : ");    
+console.log( "Berat Anda adalah " + berat + " kg");
+let tinggi = prompt("Masukkan Tinggi Badan Anda (m) : ");
+console.log("Tinggi Anda adalah " + tinggi + " m");
+let hasil = berat / (tinggi * tinggi);
+console.log("BMI Anda = " + hasil);
+function bmiTable(){
+ if (hasil <= 18.5){
+     console.log ("Underweigth");
+ }
+ else if (hasil >= 18.5 && hasil <= 24.9){
+     console.log ("Normal Range");
+ }
+ else if (hasil >= 25.0 && hasil <=29.9){
+    console.log ("Overweigth/Preobese");
+ }
+ else if (hasil == 30.0){
+     console.log ("Obese");
+ }
+ else if (hasil >=30.0 && hasil <=34.9){
+     console.log ("Class I");
+ }
+ else if (hasil >=35.0 && hasil <= 39.9){
+     console.log ("Class II");
+ }
+ else if (hasil >=40.0){
+     console.log ("Class III");
+ }
+}
+bmiTable();
